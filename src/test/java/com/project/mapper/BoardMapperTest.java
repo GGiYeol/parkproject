@@ -28,7 +28,10 @@ public class BoardMapperTest {
 	public void insertTest() {
 		BoardVO vo = new BoardVO();
 		
-		vo.setMon("aaa");
+		vo.setTitle("title" + Math.random());
+		vo.setContent("content" + Math.random());
+		vo.setWriter("writer" + Math.random());
+		
 		
 		int cnt = mapper.insert(vo);
 		assertEquals(1, cnt);

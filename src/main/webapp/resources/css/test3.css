@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: (footer높이);
+}
+
+header{
+	height : 95px;
+	background-color : red;
+	display: flex;
+}
+
+footer{
+	height : 95px;
+	background-color : red;
+
+}

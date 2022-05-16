@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+.aa{
+	font-size:50px;
+	color : white;
+	font-family : fantasy; 
+}
+th{
+	color : red;
+}
+
+header{
+	height : 95x;
+	background-color : red;
+	display: flex;
+}
+
+footer{
+	height : 95px;
+	background-color : red;
+	display: flex;
+	text-align:center;
+}

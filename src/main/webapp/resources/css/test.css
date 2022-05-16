@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+a:link {
+	color:purple; 
+	}
+
+a:visited { color:black; }
+a:hover { color:red; }
+
+a.foot:hover { color:white; }
+
+
+.aa{
+	font-size:50px;
+	color : white;
+	font-family : fantasy; 
+}
+th{
+	color : red;
+}
+
+header{
+	height : 95x;
+	background-color : red;
+	display: flex;
+}
+
+footer{
+	height : 95px;
+	background-color : red;
+	display: flex;
+	/* justify-content: center; */	
+}

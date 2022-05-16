@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family:sans-serif;
+
+}
+
+.btn1 {
+  position:relative;
+  left:3%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  width:60px;
+  height:40px; 
+  background: linear-gradient(125deg,#E92424,#6c5ce7,#81ecec);
+  background-position: left;
+  background-size: 200%;
+  color:white;
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+  display:inline;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-position: right;
+}

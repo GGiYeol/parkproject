@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.mapper.MemberMapper">
+
+<select id="select" resultType="com.project.domain.MemberVO">
+	SELECT
+	    id, password, nickName, email, address, inserted
+	FROM
+		Member
+	WHERE
+		id=#{id}
+</select>
+<insert id="insert" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+	INSERT INTO Member
+	(id, password, nickName, email, address)
+	VALUES (#{id}, #{password}, #{nickName}, #{email}, #{address})
+</insert>
+<delete id ="delete">
+	DELETE FROM Member WHERE id = #{id}
+</delete>
+<update id="update">
+	UPDATE Member
+	SET
+	password = #{password},
+	nickName = #{nickName},
+	email = #{email},
+	address = #{address}
+	WHERE
+	id = #{id}
+</update>
+
+</mapper>
